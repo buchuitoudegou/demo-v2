@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <script src="../js/vue.js"></script>
+  <link rel="stylesheet" href="https://unpkg.com/element-ui/lib/theme-chalk/index.css">
+  <link rel="stylesheet" href="../css/global.css">
+  <link rel="stylesheet" href="../css/index.css">
+  <script src="https://unpkg.com/element-ui/lib/index.js"></script>
+  <script src="../js/nav.js"></script>
+  <script src="../js/index.js"></script>
+  <title>My Music Life</title>
+</head>
+<body>
+  <div id="app">
+    <el-carousel indicator-position="inside">
+      <el-carousel-item v-for="item in 4" :key="item">
+        <div>
+          <img :src="`../img/index/${item}.jpg`" style="width: 100%; height: 100%;"/>
+        </div>
+      </el-carousel-item>
+    </el-carousel>
+    <div id="index-logo" style="display:flex; justify-content: center;background-color: white;">
+      <img src="../img/index/banner.png" style="width: 70%;"/>
+    </div>
+    <div id="nav">
+      <my-nav active-index="0"></my-nav>
+    </div>
+    <div id="index-line-1">
+      <el-card id="transition" style="position: relative;">
+        <a v-for="(bubble,idx) in bubbles" class="bubble"  :key="idx" 
+        :style="`position: absolute; left:${bubble.pos.x}px; top: ${bubble.pos.y}px;`"
+        :href="bubble.path">
+          <img :src="`../img/index/${bubble.name}.png`" style="width: 100%; height: 100%;"/>
+        </a>
+      </el-card>
+      <el-card id="img3"></el-card>
+    </div>
+    <div id="index-line-2">
+      <el-card v-for="(column, idx) in columns" :key="idx" style="padding: 2%;">
+        <h3>{{ column.title }}</h3>
+        <h4>{{ column.v_title }}</h4>
+        <div>
+          <img :src="`../img/index/line2-${idx}.jpg`">
+        </div>
+        <el-button type="primary" style="margin-top: 20px;">
+          <a :href="column.link" style="color: white" target="blank">了解更多</a>
+        </el-button>
+      </el-card>
+    </div>
+  </div>"
+  <div style="height: 100px; background-color: #262626; color: white;" class="footer">
+    <p>作者：古睿</p>
+    <p>联系方式：578799951@qq.com</p>
+    <p>All right reserved</p>
+  </div>
+</body>
+</html>

@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <script src="../js/vue.js"></script>
+  <link rel="stylesheet" href="https://unpkg.com/element-ui/lib/theme-chalk/index.css">
+  <link rel="stylesheet" href="../css/global.css">
+  <link rel="stylesheet" href="../css/video.css">
+  <script src="https://unpkg.com/element-ui/lib/index.js"></script>
+  <script src="../js/nav.js"></script>
+  <script src="../js/video.js"></script>
+  <title>My Music Life</title>
+</head>
+<body>
+  <div id="app">
+    <div id="video-banner">
+      <img src="../img/video/音之视频.jpg"/>
+    </div>
+    <my-nav active-index="2"></my-nav>
+    <div style="width: 40%; margin: 0 auto 40px auto;">
+      <img src="../img/video/视频.png" style="width: 100%;">
+    </div>
+    <el-card style="width: 60%; margin: 0 auto;">
+      <video src="../video/自制视频3.mp4" type="video/mp4" 
+      style="display: block; margin: 0 auto; width: 70%;" controls></video>
+    </el-card>
+    <div style="width: 20%; margin: 40px auto 40px auto">
+      <img src="../img/video/评论.png" style="width: 100%;">
+    </div>
+    <el-card id="content">
+      <div id="left-content">
+        <div class="content-wrapper">
+          <img src="../img/video/同学小李.png" style="width: 20%;"/>
+          <p>
+            &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp每个人心中都有几首自己的歌，这些歌曾经给你留下了深刻的记忆。它也许是你初恋的开始，也许是你一段刻骨铭心的爱情的结束。也许是你成功的开始，也许是你失败之后的动力。也许是你失去亲人的痛苦，也许是你得到重生的开始。每个人的故事不同，听的歌曲所代表的含义就会不同。<br>
+            &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp我说音乐是有灵性的，你们同意吗？在电视剧或者电影中，有多少快要临死之人，听到一段曾经熟悉的音乐后，会意外的苏醒过来。小宝宝号啕大哭时，听到自己妈妈的睡眠曲，会突然的安静下来。它能读懂人们的内心世界，我想音乐的伟大就在于此吧。<br>
+            &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp音乐无国界。那些神奇的1，2，3，4，5，6，7汇聚成了多少美妙的音乐。形形色色，不同风格，融汇成了一个伟大的艺术。世界这么大，我想只有音乐是相通的吧。<br>
+          </p>
+        </div>
+        <div class="content-wrapper">
+          <img src="../img/video/同学老王.png" style="width: 20%;"/>
+          <p>
+            &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp之前听到一些朋友说听歌很难过，也有一些失恋的校友说当你听懂一首歌的时候说明你已经失去了一个人或者你已经长大了。当时的我真的不太理解其中到底什么意思，只能说经历的太少，像个小孩子。<br>
+            &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp自从前些日子和TA分手，我情绪很低落。特别想要找一些欢快的歌曲听一听，可能是因为心情不太好，所以特别热闹的歌曲会听了心烦，而激动人心的歌曲会让自己觉得应该马上忙起来，当我听到一些悲伤的歌曲的前奏或者某一句歌词就让我潸然泪下。<br>
+            &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp比如张靓颖的《我们说好的》“好吗？一句话就哽住了喉。”当时觉得歌词就是为了我而写的啊，再也不觉得之前的朋友是矫情，经历了才懂。那一句“我们说好绝不放开相互牵的手可现实说光有爱还不够”听到这里往事一幕幕像过电影一样，我们曾经小心翼翼，不愿意脱口而出讲一些对感情不利的话，因为怕成为真的，所以宁可吞回去。<br>
+            &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp听着这样的歌曲，听懂这样的歌词会想到底是为什么我们就分开了呢？我们之前很好的啊？有时候发现平时那么普通的问候到现在都成了一种奢侈，没有资格再拥有。就像那句："时间说我们从此不可能再问候"所以有时候我们听歌听哭了，一定是这首歌特别符合当时的心境，让你回忆起过往，你因这首歌想起了某个人，某些事。你听歌听哭了别人以为你是矫情，你是多愁善感，你是神经病，但是只有你知道你想起了你们在一起的曾经，因为舍不得，但还是失去了的...... <br>              
+          </p>
+        </div>
+      </div>
+      <div id="right-content">
+        <div class="content-wrapper">
+          <img src="../img/video/家人老古.png" style="width: 20%;"/>
+          <p>
+            &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp音乐确实非常奇妙，它不仅能陶冶人的气质修养，音乐能抚慰心灵的伤痛, 还能促进人的身心健康。所谓天籁之音，就包含着一种不可思议的神秘力量。<br>
+            曾有一个哲人这样说: 在我们身边，什么都会背叛，可是音乐不会。哪怕全世界所有的人都背过身去，音乐依然会和我窃窃私语。于是我知道，无论你向前走多远，那些久远的音符还是会和你的心灵很近。生命之路并不顺畅，坎坷和不快都会出现在你的眼前，但要爱上音乐。也许你一时无法体会这种心境，但我想走进音乐，你便能理解。
+            <br>&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp“音乐”是地球生灵的空气和水，音乐不分国界，没有种族，贫富，贵贱，尊卑，任何具有生命的物种都可尽管地享受吧！这是大自然的恩赐。<br>
+            &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp我们每个人的文化、个性与经历各不相同，因此对音乐的感悟是会不一样的。同一首曲子不同的人听来会有不同的感悟，即使同一人在不同的心境下听同一首曲子，也会有所差异。所以，不要过多的在意他人对音乐的感觉，凭心的指引，听自己喜欢的音乐，这就足够！
+            音乐是一种独特的传播方式，它可以把人们的喜怒哀乐集与一起，对人的情感产生一种共鸣；在生活，学习之中，我离不开音乐，我时刻都在想着它，让它陪伴我每一个寂寞的时刻。<br>
+            &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp音乐有一种天然的情感蕴含其中，总会有那么一首歌让你听了会落泪，它轻轻的击叩着你心里的某个角落，触动着你埋藏最深的神经，不由自主地发出感慨。浅浅的律动，蓝蓝的忧郁，深深的吟唱，缓缓的动人，真切的感动。 一首歌便是一个完整的故事. 有的歌曲只能以哀伤换取眼泪，有的则是激起心灵的回音,有的歌声换起心灵的共鸣，还有的歌曲触动你身体里那根心弦，使自己感动。
+            塞上耳机便是一个人的世界，原来每一种情感都可以用来歌唱，回忆的、爱之切，情之伤。它默默搅乱你的心弦，使你内心久久不能平静并爱上它。 人的一生，不能少两样东西，那就是音乐和爱情，生活中因为音乐才生动，生活中因为爱才精彩，用心去聆听音乐，用心去营造爱情，你会发现，这个世界，真的很美好。
+            对音乐的追求能使人的精神得到升华，情操受到陶冶，生活也变得丰富而充实起来。              
+          </p>
+        </div>
+      </div>
+    </el-card>
+  </div>
+  <div style="height: 100px; background-color: #262626; color: white;" class="footer">
+    <p>作者：古睿</p>
+    <p>联系方式：578799951@qq.com</p>
+    <p>All right reserved</p>
+  </div>
+</body>
+</html>

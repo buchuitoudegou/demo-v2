@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <script src="../js/vue.js"></script>
+  <link rel="stylesheet" href="https://unpkg.com/element-ui/lib/theme-chalk/index.css">
+  <link rel="stylesheet" href="../css/global.css">
+  <link rel="stylesheet" href="../css/radio.css">
+  <script src="https://unpkg.com/element-ui/lib/index.js"></script>
+  <script src="../js/nav.js"></script>
+  <script src="../js/radio.js"></script>
+  <title>My Music Life</title>
+</head>
+<body>
+  <div id="app">
+    <div id="radio-banner">
+      <img src="../img/radio/乐之颂曲.jpg">
+    </div>
+    <my-nav active-index="3"></my-nav>\
+    <div id="below-nav">
+      <el-card id="left-container">
+        <img src="../img/radio/小编有话说.png" style="width: 70%">
+        <hr>
+        <img src="../img/radio/图片1.jpg" style="width: 80%;">
+        <p style="padding: 0 10px 0 10px; line-height: 2em;">
+          听多了热门榜单的音乐是不是觉得乏味了呢，今天小编给大家介绍几首音乐，希望大家能够从中获得一份安宁！充满自然风的曲子，让我们了解到，班得瑞最独特之处莫过于每当执行音乐制作时从头到尾都深居在阿尔卑斯山林中，坚持不掺杂一丝毫的人工混音，直到母带完成！置身在欧洲山野中，让班得瑞拥有源源不绝的创作灵感，也找寻到自然脱俗的音质。每一声虫声、鸟鸣、花落流水，都是深入山林、湖泊，走访瑞士的阿尔卑斯山，罗春湖畔、玫瑰峰山麓，少女峰等处实地纪录。
+          反复的前奏，将人带入一种缠绵悱恻、欲说还休的境界，淡淡忧伤的琴键声，加上东方乐器琵琶所独有的 “泣泣私语诉衷肠” 之特点，感情就这样一步一步被牵引，最终让人沉醉在音乐意境里而欲罢不能。
+        </p>
+      </el-card>
+      <div id="right-container">
+        <h2>歌曲推荐</h2>
+        <el-card class="content-container" v-for="(ad, idx) in advice" :key="idx">
+          <div style="width: 25%;display: inline-block;">
+            <img :src="ad.img" style="width: 100%;"/>
+          </div>
+          <div style="display: inline-block; width: 70%; margin-left: 30px;">
+            <h3 style="font-size: 2rem;">{{ ad.title }}</h3>
+            <p>{{ ad.content }}</p>
+            <audio controls :src="`../radio/${ad.radio}`" style="display: inline-block; margin: 0 auto;"></audio>
+          </div>
+        </el-card>
+      </div>
+    </div>
+  </div>
+  <div style="height: 100px; background-color: #262626; color: white;" class="footer">
+    <p>作者：古睿</p>
+    <p>联系方式：578799951@qq.com</p>
+    <p>All right reserved</p>
+  </div>
+</body>
+</html>

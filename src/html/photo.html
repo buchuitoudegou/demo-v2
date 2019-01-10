@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <script src="../js/vue.js"></script>
+  <link rel="stylesheet" href="https://unpkg.com/element-ui/lib/theme-chalk/index.css">
+  <link rel="stylesheet" href="../css/global.css">
+  <link rel="stylesheet" href="../css/photo.css">
+  <script src="https://unpkg.com/element-ui/lib/index.js"></script>
+  <script src="../js/nav.js"></script>
+  <script src="../js/photo.js"></script>
+  <title>My Music Life</title>
+</head>
+<body>
+  <div id="app">
+    <div id="photo-banner">
+      <img src="../img/photo/banner.jpg"/>
+    </div>
+    <my-nav active-index="1"></my-nav>
+    <div id="below-nav">
+      <el-card id="left-nav" style="margin-top: 10px;">
+        <h3 style="text-align: center;">导航</h3>
+        <el-menu class="el-menu-vertical">
+            <el-menu-item v-for="(nav, idx) in leftNav" :key="idx" :index="String(idx)">
+              <a :href="nav.path" target="blank">
+                <img :src="nav.img" style="width: 100%; height: 100%"/>
+              </a>
+            </el-menu-item>
+        </el-menu>'
+      </el-card>
+      <div id="photo-content">
+        <el-card style="text-align: center; width: 60%;">
+          亲爱的朋友，你是否体验过以下的场景？<br>
+          一个歌手的名字就在嘴边，却怎么也想不起来。<br>
+          一个明星的长相和脸总是对不上号。<br>
+          一个偶像的代表音乐、身世总是忘记。<br>
+          没关系！作为“音乐狂想世界”的主管者，我特地制作了一个音乐相册。<br>
+          快来看看吧！
+        </el-card>
+        <el-card style="text-align: center;">
+          <embed src="../flash/flash.swf" width="800" height="300"/>
+        </el-card>
+        <el-card style="text-align: center; width: 60%;">
+          点击右上角三个明星的头像<br>
+          就可以看到他们好看的照片啦o(*￣▽￣*)ブ<br>
+          鼠标轻轻移过他们的照片<br>
+          照片还会有放大效果哦ㄟ(≧◇≦)ㄏ<br>
+          别忘记右下角还有歌手的信息介绍呢！
+        </el-card>
+        <div style="text-align: center;">
+          <img src="../img/photo/g1.gif" style="width: 450px;height: 500px; margin-right: 5%;"/>
+          <img src="../img/photo/g2.gif" style="width: 450px;height: 500px;"/>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div style="height: 100px; background-color: #262626; color: white;" class="footer">
+    <p>作者：古睿</p>
+    <p>联系方式：578799951@qq.com</p>
+    <p>All right reserved</p>
+  </div>
+</body>
+</html>
